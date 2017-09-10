@@ -1,0 +1,33 @@
+{
+  "name": "minecraft-jsonapi",
+  "version": "0.0.1",
+  "description": "Interfaces with the json api plugin for minecraft",
+  "main": "functionalIndex.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macdja38/minecraft-jsonapi.git"
+  },
+  "keywords": [
+    "minecraft",
+    "jsonapi",
+    "node.js",
+    "javascript",
+    "json"
+  ],
+  "author": "macdja38",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/macdja38/minecraft-jsonapi/issues"
+  },
+  "homepage": "https://github.com/macdja38/minecraft-jsonapi#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "jest": "^21.0.2",
+    "request-promise-native": "^1.0.4"
+  }
+}
