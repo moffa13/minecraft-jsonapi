@@ -15,15 +15,19 @@ test("Checks hashing function", () => {
 });
 
 test("check url generation", () => {
-  expect(Minecraft._.generateURL("pvpcraft.ca", 25565, false)).toBe("http://pvpcraft.ca:25565");
+  expect(Minecraft._.generateHttpURL("pvpcraft.ca", 25565, false)).toBe("http://pvpcraft.ca:25565");
 });
 
 test("allow https url generation", () => {
-  expect(Minecraft._.generateURL("pvpcraft.ca", 25565, true)).toBe("https://pvpcraft.ca:25565");
+  expect(Minecraft._.generateHttpURL("pvpcraft.ca", 25565, true)).toBe("https://pvpcraft.ca:25565");
 });
 
 test("allow empty string as port", () => {
-  expect(Minecraft._.generateURL("pvpcraft.ca", "", true)).toBe("https://pvpcraft.ca");
+  expect(Minecraft._.generateHttpURL("pvpcraft.ca", "", true)).toBe("https://pvpcraft.ca");
+});
+
+test("check ws generation", () => {
+  expect(Minecraft._.generateWsURL("pvpcraft.ca", 25565, false)).toBe("ws://pvpcraft.ca:25565");
 });
 
 test("attempts to fetch info", () => {
