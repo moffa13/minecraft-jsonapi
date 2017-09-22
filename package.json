@@ -1,6 +1,6 @@
 {
   "name": "minecraft-jsonapi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Interfaces with the json api plugin for minecraft",
   "main": "functionalIndex.js",
   "scripts": {
