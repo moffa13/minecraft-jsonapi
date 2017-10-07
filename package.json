@@ -1,6 +1,6 @@
 {
   "name": "minecraft-jsonapi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Interfaces with the json api plugin for minecraft",
   "main": "functionalIndex.js",
   "scripts": {
@@ -27,8 +27,10 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "jest": "^21.0.2",
     "request-promise-native": "^1.0.4",
     "ws": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
   }
 }

@@ -29,7 +29,7 @@ module.exports = class Minecraft {
       arguments: args,
       username: this._options.username,
       key: Minecraft.generateKey(this._options.username, name, this._options.password),
-      tag: "sampleTag"
+      tag: "sampleTag",
     }];
     const requestOptions = {
       uri: `${Minecraft.generateURL(this._options.host, this._options.port, this._options.https)}/api/2/call`,
