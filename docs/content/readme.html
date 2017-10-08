@@ -1,0 +1,34 @@
+
+<html><head></head><body><h1 id="features">Features</h1>
+<hr />
+<p>Simple yet powerful <a href="https://github.com/alecgorge/jsonapi">minecraft JSONAPI</a> module</p>
+<h1 id="method-docs">Method docs</h1>
+<hr />
+<p><a href="http://mcjsonapi.com/apidocs/">rest</a></p>
+<h1 id="usage">Usage</h1>
+<hr />
+<h3 id="import">Import</h3>
+<pre><code class="lang-js">const Minecraft = require("minecraft-jsonapi");
+</code></pre>
+<h3 id="options">Options</h3>
+<pre><code class="lang-js">const options = {
+  host: "127.0.0.1",
+  port: "25565",
+  https: false,
+  username: "username",
+  password: "password",
+};
+</code></pre>
+<h3 id="rest-call">Rest Call</h3>
+<pre><code class="lang-js">const minecraft = Minecraft.createRequest();
+
+const resultPromise = minecraft.add("server.performance").dispatch(options);
+
+resultPromise.then(console.log).catch(console.error);
+</code></pre>
+<h3 id="streaming-api">Streaming API</h3>
+<pre><code class="lang-js">const minecraft = Minecraft.createRequest();
+
+minecraft.add("console", []).add("chat", []).follow(options, console.log)
+</code></pre>
+</body></html>
