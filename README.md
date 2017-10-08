@@ -2,6 +2,10 @@
 
 Simple yet powerful [minecraft JSONAPI](https://github.com/alecgorge/jsonapi) module
 
+# Actual real life documentation
+
+[Documentation](https://macdja38.github.io/minecraft-jsonapi)
+
 # Method docs
 [rest](http://mcjsonapi.com/apidocs/)
 
