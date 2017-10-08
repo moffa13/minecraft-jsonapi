@@ -35,22 +35,8 @@ let config = {
         },
         {
           label: 'Demos',
-          href: 'https://github.com/macdja38/minecraft-jsonapi/tree/master/modules',
+          href: 'https://github.com/macdja38/pvpcraft/blob/master/modules/minecraft.js',
           iconClass: 'ico-mouse-pointer'
-        },
-        {
-          label: 'Download',
-          iconClass: 'ico-md ico-download',
-          items: [
-            {
-              label: 'dev',
-              href: 'https://github.com/macdja38/minecraft-jsonapi/archive/dev.zip',
-            },
-            {
-              label: 'release',
-              href: 'https://github.com/macdja38/minecraft-jsonapi/archive/master.zip',
-            }
-          ]
         },
         {
           label: 'GitHub',
