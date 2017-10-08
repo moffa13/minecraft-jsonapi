@@ -4,6 +4,7 @@
   "description": "Interfaces with the json api plugin for minecraft",
   "main": "functionalIndex.js",
   "scripts": {
+    "doc": "node docma.js",
     "test": "jest"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "ws": "^3.1.0"
   },
   "devDependencies": {
+    "docma": "^1.5.1",
     "jest": "^21.2.1"
   }
 }
