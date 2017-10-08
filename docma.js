@@ -35,7 +35,7 @@ let config = {
         },
         {
           label: 'Demos',
-          href: 'https://github.com/macdja38/pvpcraft/tree/master/modules',
+          href: 'https://github.com/macdja38/minecraft-jsonapi/tree/master/modules',
           iconClass: 'ico-mouse-pointer'
         },
         {
