@@ -59,6 +59,17 @@ function add(requests, name, args = []) {
   }
 }
 
+
+function JSON_stringify(s, emit_unicode)
+{
+   var json = JSON.stringify(s);
+   return emit_unicode ? json : json.replace(/[\u007f-\uffff]/g,
+      function(c) { 
+        return '\\u'+('0000'+c.charCodeAt(0).toString(16)).slice(-4);
+      }
+   );
+}
+
 /**
  * Sends request to the api server
  * @typedef {function} dispatch
@@ -77,16 +88,18 @@ function dispatch(requests, options = {}) {
       tag: "sampleTag",
     }));
 
+    
+
   const requestOptions = {
     uri: `${generateHttpURL(optionsWithDefaults.host, optionsWithDefaults.port, optionsWithDefaults.https)}/api/2/call`,
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body,
-    json: true,
+    body: JSON_stringify(body)
   };
-  return request(requestOptions)
+  console.log(requestOptions);
+  return request(requestOptions).then(e => JSON.parse(e));
 }
 
 function generateHttpURL(host, port = 25565, ssl = false) {
