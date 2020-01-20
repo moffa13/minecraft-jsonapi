@@ -98,7 +98,7 @@ function dispatch(requests, options = {}) {
     },
     body: JSON_stringify(body)
   };
-  console.log(requestOptions);
+  
   return request(requestOptions).then(e => JSON.parse(e));
 }
 
